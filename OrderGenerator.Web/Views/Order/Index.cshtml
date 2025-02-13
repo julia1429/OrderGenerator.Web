@@ -1,0 +1,19 @@
+﻿
+<form asp-action="CreateOrder" method="post">
+    <label>Símbolo</label>
+    <select name="symbol">
+        <option value="PETR4">PETR4</option>
+        <option value="VALE3">VALE3</option>
+        <option value="VIIA4">VIIA4</option>
+    </select>
+    <label>Lado</label>
+    <select name="side">
+        <option value="Compra">Compra</option>
+        <option value="Venda">Venda</option>
+    </select>
+    <label>Quantidade</label>
+    <input type="number" name="quantity" min="1" max="99999" required />
+    <label>Preço</label>
+    <input type="number" name="price" step="0.01" max="999.99" required />
+    <button type="submit">Enviar Ordem</button>
+</form>
